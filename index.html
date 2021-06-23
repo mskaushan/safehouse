@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeHouse</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#0a0a0a">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <a href="index.html"><svg viewBox="0 0 132 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M132 0H0V100H132V0Z" fill="#0A0A0A"/>
+                <path d="M8.75268 90.6163C7.73967 90.6163 6.7572 90.4821 5.80523 90.2139C4.86546 89.9334 4.10879 89.5738 3.53516 89.1349L4.54205 86.9036C5.09126 87.306 5.7442 87.629 6.5009 87.8729C7.25761 88.1169 8.01428 88.2387 8.77098 88.2387C9.61311 88.2387 10.2356 88.1169 10.6383 87.8729C11.0411 87.6169 11.2424 87.2815 11.2424 86.867C11.2424 86.5623 11.1205 86.3121 10.8763 86.1172C10.6445 85.9098 10.3392 85.7452 9.96094 85.6234C9.5948 85.5016 9.09439 85.3673 8.45976 85.221C7.48337 84.9895 6.68398 84.7576 6.06153 84.526C5.43909 84.2945 4.90207 83.9225 4.45051 83.4104C4.01114 82.8983 3.79145 82.2154 3.79145 81.362C3.79145 80.6184 3.99283 79.9475 4.39559 79.3502C4.79834 78.7405 5.40248 78.2591 6.20799 77.9054C7.02569 77.5517 8.02039 77.375 9.19204 77.375C10.0096 77.375 10.8093 77.4727 11.5903 77.6676C12.3713 77.8626 13.0548 78.1431 13.6407 78.5089L12.7253 80.7585C11.5416 80.088 10.3575 79.7526 9.17374 79.7526C8.34381 79.7526 7.72748 79.8868 7.32472 80.1549C6.93416 80.4231 6.7389 80.7768 6.7389 81.2157C6.7389 81.6546 6.9647 81.9839 7.41626 82.2033C7.88005 82.4107 8.5818 82.6177 9.52157 82.8251C10.4981 83.0567 11.2974 83.2886 11.9198 83.5201C12.5422 83.7517 13.0731 84.1175 13.5125 84.6175C13.964 85.1175 14.1899 85.7942 14.1899 86.6476C14.1899 87.3791 13.9823 88.0496 13.5674 88.6594C13.1647 89.2567 12.5543 89.7322 11.7367 90.0859C10.9191 90.4396 9.92433 90.6163 8.75268 90.6163ZM25.5714 87.6535H19.6216L18.4866 90.3968H15.4476L21.1594 77.5945H24.0885L29.8186 90.3968H26.7064L25.5714 87.6535ZM24.6377 85.4039L22.6056 80.5024L20.5736 85.4039H24.6377ZM35.0292 79.9721V83.3555H40.9607V85.7331H35.0292V90.3968H32.0635V77.5945H41.7479V79.9721H35.0292ZM54.5936 88.0192V90.3968H44.6712V77.5945H54.3556V79.9721H47.6186V82.752H53.5684V85.0564H47.6186V88.0192H54.5936ZM69.6219 77.5945V90.3968H66.6562V85.1479H60.8345V90.3968H57.8688V77.5945H60.8345V82.6423H66.6562V77.5945H69.6219ZM79.775 90.6163C78.4448 90.6163 77.2428 90.3299 76.1685 89.7567C75.1067 89.1835 74.2708 88.3971 73.6604 87.3974C73.0625 86.3853 72.7634 85.2514 72.7634 83.9956C72.7634 82.7399 73.0625 81.6118 73.6604 80.6122C74.2708 79.6001 75.1067 78.8078 76.1685 78.2346C77.2428 77.6614 78.4448 77.375 79.775 77.375C81.1056 77.375 82.3014 77.6614 83.3632 78.2346C84.425 78.8078 85.2613 79.6001 85.8713 80.6122C86.4816 81.6118 86.7866 82.7399 86.7866 83.9956C86.7866 85.2514 86.4816 86.3853 85.8713 87.3974C85.2613 88.3971 84.425 89.1835 83.3632 89.7567C82.3014 90.3299 81.1056 90.6163 79.775 90.6163ZM79.775 88.0924C80.5318 88.0924 81.2154 87.9216 81.8254 87.5803C82.4358 87.2266 82.9118 86.739 83.2534 86.1172C83.6074 85.4953 83.7843 84.7883 83.7843 83.9956C83.7843 83.203 83.6074 82.4959 83.2534 81.8741C82.9118 81.2523 82.4358 80.7706 81.8254 80.4293C81.2154 80.0756 80.5318 79.8989 79.775 79.8989C79.0186 79.8989 78.335 80.0756 77.7246 80.4293C77.1146 80.7706 76.6324 81.2523 76.2784 81.8741C75.9368 82.4959 75.7658 83.203 75.7658 83.9956C75.7658 84.7883 75.9368 85.4953 76.2784 86.1172C76.6324 86.739 77.1146 87.2266 77.7246 87.5803C78.335 87.9216 79.0186 88.0924 79.775 88.0924ZM95.6246 90.6163C93.7938 90.6163 92.3659 90.1104 91.3407 89.0983C90.3276 88.0862 89.8212 86.6413 89.8212 84.7638V77.5945H92.787V84.6541C92.787 86.9464 93.7389 88.0924 95.6429 88.0924C96.5703 88.0924 97.2784 87.8181 97.7665 87.2694C98.2546 86.7087 98.4988 85.8366 98.4988 84.6541V77.5945H101.428V84.7638C101.428 86.6413 100.915 88.0862 99.8901 89.0983C98.877 90.1104 97.4553 90.6163 95.6246 90.6163ZM109.484 90.6163C108.472 90.6163 107.489 90.4821 106.537 90.2139C105.598 89.9334 104.841 89.5738 104.267 89.1349L105.274 86.9036C105.823 87.306 106.476 87.629 107.233 87.8729C107.99 88.1169 108.746 88.2387 109.503 88.2387C110.345 88.2387 110.967 88.1169 111.37 87.8729C111.773 87.6169 111.974 87.2815 111.974 86.867C111.974 86.5623 111.852 86.3121 111.608 86.1172C111.376 85.9098 111.071 85.7452 110.693 85.6234C110.327 85.5016 109.826 85.3673 109.192 85.221C108.215 84.9895 107.416 84.7576 106.793 84.526C106.171 84.2945 105.634 83.9225 105.182 83.4104C104.743 82.8983 104.523 82.2154 104.523 81.362C104.523 80.6184 104.725 79.9475 105.127 79.3502C105.53 78.7405 106.134 78.2591 106.94 77.9054C107.758 77.5517 108.752 77.375 109.924 77.375C110.742 77.375 111.541 77.4727 112.322 77.6676C113.103 77.8626 113.787 78.1431 114.372 78.5089L113.457 80.7585C112.273 80.088 111.09 79.7526 109.906 79.7526C109.076 79.7526 108.459 79.8868 108.057 80.1549C107.666 80.4231 107.471 80.7768 107.471 81.2157C107.471 81.6546 107.697 81.9839 108.148 82.2033C108.612 82.4107 109.314 82.6177 110.253 82.8251C111.23 83.0567 112.029 83.2886 112.652 83.5201C113.274 83.7517 113.805 84.1175 114.244 84.6175C114.696 85.1175 114.922 85.7942 114.922 86.6476C114.922 87.3791 114.714 88.0496 114.299 88.6594C113.896 89.2567 113.286 89.7322 112.469 90.0859C111.651 90.4396 110.656 90.6163 109.484 90.6163ZM127.786 88.0192V90.3968H117.864V77.5945H127.548V79.9721H120.811V82.752H126.761V85.0564H120.811V88.0192H127.786Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0625 50.5989L66.0757 6.62891L66.0804 6.63361L66.0807 6.63329L85 25.481V14.0012H92V32.4545L110.218 50.6033L104.522 56.2935L66.084 18.0011L27.7583 56.2891L22.0625 50.5989ZM59.4102 42.1145H72.9574V65.5245H59.4102V42.1145Z" fill="white"/>
+                </svg>
+            </a>
+        </div>
+        <nav class="header-nav nav">
+            <input class="input" id="menu-toggle" type="checkbox">
+            <label class="menu-btn" for="menu-toggle">
+                <span>
+                </span>
+            </label>
+            <div class="header-nav__menu">
+                <a class="menu-item" href="#about">О нас</a>
+                <a class="menu-item" href="#services">Услуги</a>
+                <a class="menu-item" href="#gallery">Галерея</a>
+                <a class="menu-item" href="#contact">Контакты</a>
+            </div>
+        </nav>
+        <div class="header-telephone">
+            <a href="tel:##">+375 (25) 123-45-67</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section section-home">
+            <div class="section-home__text">
+                <h1 class="section-home__top">
+                    Строительство и ремонт в Гомеле
+                </h1>
+                <div class="section-home__button">
+                    <a class="button" href="#contact">Получить консультацию</a>
+                </div>
+                <div class="section-home__bottom">
+                    Надежное будущее строим вместе  
+                </div>
+            </div>
+            <div class="section-home__images">
+                <div class="section-home_swiper swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-image">
+                                <img src="images/image_1.svg" alt="Выполненная работа">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-image">
+                                <img src="images/image_2.svg" alt="Выполненная работа">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-image">
+                                <img src="images/image_3.svg" alt="Выполненная работа">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-image">
+                                <img src="images/image_4.svg" alt="Выполненная работа">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-image">
+                                <img src="images/image_5.svg" alt="Выполненная работа">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="section section-about" id="about">
+            <div class="section-about__wrapper-background">
+                <div class="section-about__top">
+                    <h2>О НАС</h2>
+                    <div class="section-about__wrapper">
+                        <div class="section-about__text">
+                            <div class="section-about__string">
+                                Качественное проведение работ
+                            </div>
+                            <div class="section-about__string">
+                                Обсуждение работы на каждом этапе
+                            </div>
+                            <div class="section-about__string">
+                                Профессиональный инструмент
+                            </div>
+                            <div class="section-about__string">
+                                Начинаем работу без аванса
+                            </div>
+                            <div class="section-about__string">
+                                Доступные цены
+                            </div>
+                        </div>
+                        <div class="section-about__circles swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/circle_1.svg" alt="Показатели успешной работы">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/circle_2.svg" alt="Показатели успешной работы">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/circle_3.svg" alt="Показатели успешной работы">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-about__bottom">
+                <p>
+                    Для многих ремонт — это что-то вроде стихийного бедствия, но чем тщательнее вы его спланируете, 
+                    тем проще будет его пережить. А уютная, привлекательная и чистая квартира – это мечта любого человека. 
+                </p>
+            </div>
+        </section>
+
+        <section class="section section-work">
+            <h2>КАК МЫ РАБОТАЕМ</h2>
+            <div class="section-work__wrapper">
+                <div class="section-work__string">
+                    <div class="section-work__img">
+                        <img class="one" src="images/01.svg" alt="Первый пункт">
+                    </div>
+                    <div>
+                        Бесплатный выезд мастера на объект для оценки работы 
+                    </div>
+                </div>
+                <div class="section-work__string">
+                    <div class="section-work__img">
+                        <img src="images/02.svg" alt="Второй пункт">
+                    </div>
+                    <div>
+                        Обсуждение работы с заказчиком 
+                    </div>
+                </div>
+                <div class="section-work__string">
+                    <div class="section-work__img">
+                        <img src="images/03.svg" alt="Третий пункт">
+                    </div>
+                    <div>
+                        Оформление и подписание договора
+                    </div>
+                </div>
+                <div class="section-work__string">
+                    <div class="section-work__img">
+                        <img src="images/04.svg" alt="Четвёртый пункт">
+                    </div>
+                    <div>
+                        Выполнение работ в соответствии с пожеланиями заказчика
+                    </div>
+                </div>
+                <div class="section-work__string">
+                    <div class="section-work__img">
+                        <img src="images/05.svg" alt="Пятый пункт">
+                    </div>
+                    <div>
+                        Прием работы заказчиком  и окончательный расчет
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-services" id="services">
+            <h2>НАШИ УСЛУГИ</h2>
+            <div class="section-services__accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item__trigger" for="checkbox-1">
+                        <img src="images/brush_mini.svg" alt="Кисть">
+                        Отделочные работы
+                    </div>
+                    <div class="accordion-item__content">
+                        <ul>
+                            <li>Демонтажные работы</li>
+                            <li>Штукатурные работы </li>
+                            <li>Малярные работы</li>
+                            <li>Облицовка стен и потолков</li>
+                            <li>Укладка всех видов наполных покрытий</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item__trigger" for="checkbox-2">
+                        <img src="images/house_mini.svg" alt="Дом">
+                        Строительство домов
+                    </div>
+                    <div class="accordion-item__content">
+                        <ul>
+                            <li>Укладка кирпича </li>
+                            <li>Монтаж перекрытий</li>
+                            <li>Установка перегородок</li>
+                            <li>Установка вентиляционных каналов</li>
+                            <li>Кровельные работы любой сложности</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item__trigger" for="checkbox-3">
+                        <img src="images/light_mini.svg" alt="Лампочка">
+                        Электрика
+                    </div>
+                    <div class="accordion-item__content">
+                        <ul>
+                            <li>Замена розеток и выключателей</li>
+                            <li>Перенос розеток и выключателей</li>
+                            <li>Замена электропроводки</li>
+                            <li>Сборка электросчетчиков</li>
+                            <li>Установка электросчетчиков</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item__trigger" for="checkbox-4">
+                        <img src="images/plumbing_mini.svg" alt="Водопровод">
+                        Сантехника
+                    </div>
+                    <div class="accordion-item__content">
+                        <ul>
+                            <li>Монтаж трубопроводов ПВХ</li>
+                            <li>Монтаж отопления</li>
+                            <li>Монтаж канализации</li>
+                            <li>Установка всех видов сантехнического оборудования</li>
+                            <li>Замена батарей отопления</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-gallery" id="gallery">
+            <h2>ГАЛЕРЕЯ РАБОТ</h2>
+            <div class="section-gallery__wrapper">
+                <a data-fslightbox="gallery" href="images/tile_clear.svg" class="section-gallery__image">
+                    <img src="images/tile.svg" alt="Плитка">
+                </a>
+                <a data-fslightbox="gallery" href="images/masonry_clear.svg" class="section-gallery__image">
+                    <img src="images/masonry.svg" alt="Кладка">
+                </a>
+                <a data-fslightbox="gallery" href="images/decoration_clear.svg" class="section-gallery__image">
+                    <img src="images/decoration.svg" alt="Отделка">
+                </a>
+                <a data-fslightbox="gallery" href="images/roof_clear.svg" class="section-gallery__image">
+                    <img src="images/roof.svg" alt="Крыша">
+                </a>
+                <a data-fslightbox="gallery" href="images/plumbing_clear.svg" class="section-gallery__image">
+                    <img src="images/plumbing.svg" alt="Сантехника">
+                </a>
+                <a data-fslightbox="gallery" href="images/electric_clear.svg" class="section-gallery__image">
+                    <img src="images/electric.svg" alt="Электрика">
+                </a>
+            </div>
+        </section>
+
+        <section class="section section-contact" id="contact">
+            <div class="section-contact__wrapper-top">
+                <h2>СВЯЖИТЕСЬ С НАМИ ИЛИ ОСТАВЬТЕ ЗАЯВКУ</h2>
+                <div>
+                    Давайте воплотим Ваши мечты в реальность!
+                </div>
+            </div>
+            <div class="section-contact__wrapper-bottom">
+                <div class="section-contact__form">
+                    <div class="section-contact__head">
+                        ЗАПОЛНИТЕ ФОРМУ
+                    </div>
+                    <form action="##">
+                        <fieldset>
+                            <input type="text" placeholder="Ваше имя" required>
+                            <input class="tel" type="tel" placeholder="Номер телефона" required>
+                            <textarea name="" id="" cols="36" rows="8" placeholder="Опишите Вашу заявку"></textarea>
+                            <button class="button" type="submit">Получить консультацию</button>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="checkbox__text">
+                                    Принимаю условия Политики конфединциальности
+                                </div>
+                            </label>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <img src="images/photo.svg" alt="Фото">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper-top">
+            <div class="footer__wrapper-top__left">
+                <a href="tel:##">+ 375-29-123-45-67</a>
+                <a href="mailto:##">stroyka@gmail.com</a>
+            </div>
+            <div class="footer__wrapper-top__right">
+                <div>
+                    ИП Костин А.Н.
+                </div>
+                <div>
+                    Гомель, ул. Ленина 42
+                </div>
+            </div>
+        </div>
+        <div class="footer__wrapper-bottom">
+            © Safehouse 2021
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/fslightbox.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
